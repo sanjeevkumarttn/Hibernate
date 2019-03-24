@@ -30,8 +30,8 @@ public class Main {
         Session session=sessionFactory.openSession();
         session.beginTransaction();
         session.persist(author);
-        session.persist(book1);
-        session.persist(book2);
+        //session.persist(book1);
+        //session.persist(book2);
         session.getTransaction().commit();
         session.close();
 
